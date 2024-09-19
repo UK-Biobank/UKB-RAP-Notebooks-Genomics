@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-04T12:55:53.659Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="LU_nU9v6okDJZXhcw3En" version="24.4.13" type="device">
+<mxfile host="app.diagrams.net" modified="2024-09-12T13:26:02.496Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" etag="yfeDH2STOTR8u1jNJ8uO" version="24.4.14" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1914" dy="976" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -96,19 +96,31 @@
         <mxCell id="KVcAHST_LJNs0rAoIdOQ-8" value="&lt;p style=&quot;font-size: 18px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;u style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Genomics analytical&lt;br&gt;&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;u style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;workflows (G-series)&lt;/font&gt;&lt;/u&gt;&lt;/b&gt;&lt;/p&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="305" y="10" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="b5AI8tf0eW2_4nFeec93-0" value="&lt;p style=&quot;font-size: 15px;&quot; data-pm-slice=&quot;1 1 [&amp;quot;body&amp;quot;,null]&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#000000&quot;&gt;A106:&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;&amp;nbsp;Hypertension data&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="b5AI8tf0eW2_4nFeec93-0" value="&lt;p style=&quot;font-size: 15px;&quot; data-pm-slice=&quot;1 1 [&amp;quot;body&amp;quot;,null]&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 15px;&quot; color=&quot;#000000&quot;&gt;A106:&lt;/font&gt;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;&amp;nbsp;Hypertension data&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="15" y="540" width="145" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="b5AI8tf0eW2_4nFeec93-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;exitX=0.981;exitY=0.325;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5AI8tf0eW2_4nFeec93-0" target="qkU0JbKQ6EuipafsIjLe-20">
+        <mxCell id="b5AI8tf0eW2_4nFeec93-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;exitX=0.981;exitY=0.325;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5AI8tf0eW2_4nFeec93-0" target="qkU0JbKQ6EuipafsIjLe-20" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="240" y="460" as="sourcePoint" />
             <mxPoint x="380" y="587" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="b5AI8tf0eW2_4nFeec93-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;exitX=1.002;exitY=0.622;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5AI8tf0eW2_4nFeec93-0" target="qkU0JbKQ6EuipafsIjLe-18">
+        <mxCell id="b5AI8tf0eW2_4nFeec93-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;exitX=1.002;exitY=0.622;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="b5AI8tf0eW2_4nFeec93-0" target="qkU0JbKQ6EuipafsIjLe-18" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="200" y="540" as="sourcePoint" />
             <mxPoint x="320" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="UkMPJbA3vUHzEntye4IE-0" value="&lt;font size=&quot;1&quot; color=&quot;#000000&quot;&gt;&lt;b style=&quot;font-size: 15px;&quot;&gt;G103: Participant data for Hail&lt;/b&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#009900;strokeColor=#9673a6;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="650" y="960" width="150" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="UkMPJbA3vUHzEntye4IE-1" value="&lt;p data-pm-slice=&quot;1 1 [&amp;quot;body&amp;quot;,null]&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot; color=&quot;#000000&quot;&gt;G208: GWAS in Hail&lt;/font&gt;&lt;/b&gt;&lt;/p&gt;" style="whiteSpace=wrap;html=1;rounded=1;glass=0;strokeWidth=1;shadow=0;fillColor=#00FF00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="320" y="980" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="UkMPJbA3vUHzEntye4IE-2" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=3;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#009900;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="UkMPJbA3vUHzEntye4IE-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="1018" as="targetPoint" />
+            <mxPoint x="655" y="972" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
       </root>

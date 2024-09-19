@@ -7,7 +7,6 @@ In order to initiate these notebooks on the RAP please see instructions at the b
 
 ![**Figure 1. Workflow order and input data file relationships for Genomics Jupyter notebooks on the RAP.**](genomics.jpg)
 
-\
 
 
 These notebooks illustrate how to perform many standard analyses (e.g, GWAS, population genomics, functional annotation) that are typically employed in bioinformatic studies. Please note, notebook **G102**, a key component of many subsequent analyses, takes several hours to run as it processes the first eight chromosomes of the 200K joint call PLINK formatted files. It can be sped up to only process fewer files, e.g., the last three smaller chromosomes (20-22; the only downside to this is that occasional downstream analyses will not generate illustrative significant results). Please see comments in **G102** for instruction if you wish to change code for quicker file processing.
@@ -31,6 +30,8 @@ G101 UKB pipeline pVCF to PLINK (language = Bash; instance = Single Node)
 
 G102 Processing variant data using PLINK (Bash; Single Node)
 
+G103 Retrieve participant data for Hail GWAS (Bash; Spark)
+
 
 **Genomics analytical workflows**
 
@@ -47,6 +48,8 @@ G205 Polygenic risk scores for hypertension (R; Single Node)
 G206 Annotate SNPs from dbSNP and profile ontologies (R; Single Node)
 
 G207 Functional annotations of variants (R; Single Node)
+
+G208 GWAS in Hail (Python; Spark/Hail-VEP)
 
 
 ### 
@@ -82,7 +85,7 @@ G207 Functional annotations of variants (R; Single Node)
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \£1.50
+-   estimated cost: £1.50
 
 ### 
 
@@ -102,10 +105,29 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£1.50
+-   estimated cost: £1.50
 
+##
 
+## G103 Retrieve participant data for Hail GWAS (Bash; Spark)
 
+Scope: In this notebook, we access phenotypic data stored in the Spark database. [Notebook A103](https://github.com/UK-Biobank/UKB-RAP-Notebooks-Access/blob/main/JupyterNotebook_Python/A103_Export-participant-data_Python.ipynb) provides further details on retrieving participant data if needed.
+
+**Notebook file:** G103_Retrieve_participant_data_for_Hail_GWAS.ipynb
+
+**Dependency**
+
+-   **A Spark instance**
+
+**Run info:**
+
+-   runtime: 10 mins
+
+-   recommended instance: mem1_ssd1_v2_x8
+
+-   estimated cost: £0.10
+
+##
 
 # Analytical notebook details
 
@@ -131,7 +153,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   cost: \~£0.70
+-   cost: £0.70
 
 ## G202 GWAS participant height (R; Single Node)
 
@@ -151,7 +173,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   cost: \~£0.70
+-   cost: £0.70
 
 ## G203 GWAS hypertension (R; Single Node)
 
@@ -171,7 +193,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£1.00
+-   estimated cost: £1.00
 
 ## G204 Polygenic risk scores of participant height (R; Single Node)
 
@@ -189,7 +211,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£1.00
+-   estimated cost: £1.00
 
 ## G205 Polygenic risk scores for hypertension (R; Single Node)
 
@@ -209,7 +231,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£0.50
+-   estimated cost: £0.50
 
 ## G206 Annotate SNPs from dbSNP and profile ontologies (R; Single Node)
 
@@ -231,7 +253,7 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£0.70
+-   estimated cost: £0.70
 
 ## G207 Functional annotations of variants (R; Single Node)
 
@@ -253,7 +275,30 @@ Scope: This notebook shows how to interact with genomic data in bed/bim/bam form
 
 -   recommended instance: mem1_ssd1_v2_x16
 
--   estimated cost: \<£0.70
+-   estimated cost: £0.70
+
+## G208 GWAS in Hail (Python; Spark/Hail-VEP)
+
+**Scope:** This notebook runs a basic GWAS in Hail after initially converting and performing quality control on 200k pVCF WES files. This notebook provides a complete workflow for performing GWAS in Hail.
+
+This notebook depends on notebook **G103 Retrieve participant data for Hail GWAS** which returns a csv table including the trait of interest for the analysis. For illustration purposes, this notebooks extracts field 1239 (Current smoker), creates a pheno folder in the project space and produces a file named smoking_bool.csv. 
+
+**Notebook file:** G208_GWAS_in_Hail.ipynb
+
+**Dependency:**
+
+-   **Spark/Hail-VEP instance**
+
+-   **G103** - *smoking_bool.csv* (modify if named differently)
+
+
+**Run info:**
+
+-   runtime: 2hrs
+
+-   recommended instance: mem1_ssd1_v2_x16
+
+-   estimated cost: £0.80
 
 ### 
 
