@@ -19,6 +19,8 @@ These notebooks illustrate how to perform many standard analyses (e.g, GWAS, pop
 
 -   Always terminate a kernel before starting a new notebook
 
+- You need Tier 3 access (or Tier 11 or 12 for students and/or low-income countries) for genomic (WES or WGS) data sets.
+
 ### 
 
 # Table of contents for Genomics workflows
