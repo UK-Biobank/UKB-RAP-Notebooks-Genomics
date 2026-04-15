@@ -1,6 +1,6 @@
 # Genomics on the UK Biobank Research Analyses Platform
 
-The G-series (**Genomics**) notebooks found in this repository focus on performing genomics analytics workflows on the RAP. The notebooks running down the centre of figure 1 form the core repository of analytical workflows. As you run through them you will also create files required for subsequent workflows (purple and blue arrows; figure 1). Furthermore, a number of these analyses are contingent on data files created and uploaded to your RAP project in the A-series (**Accessing data**) notebooks (black arrows; figure 1). Figure 1 indicates which A-series notebooks are required to be run to create the requisite files for these analyses; e.g. the A-series notebook A103 is required to perform the G202 GWAS analysis. Finally, there are genomics-based preliminary notebooks (G101 and G102) contained in this repo that outline basic genomic data file handling methods with G102 also providing genomic input files (green arrows) for a number of the main analytical workflows (figure 1).
+The G-series (**Genomics**) notebooks found in this repository focus on performing genomics analytics workflows on the RAP. The notebooks running down the centre of figure 1 form the core repository of analytical workflows. As you run through them you will also create files required for subsequent workflows (purple and blue arrows; figure 1). Furthermore, a number of these analyses are contingent on data files created and uploaded to your RAP project in the A-series (**Accessing data**) notebooks (black arrows; figure 1). Figure 1 indicates which A-series notebooks are required to be run to create the requisite files for these analyses; e.g. the A-series notebook A103 is required to perform the G202 GWAS analysis. Finally, there are genomics-based preliminary notebooks (G101, G102 and G104) contained in this repo that outline basic genomic data file handling methods with G102 also providing genomic input files (green arrows) for a number of the main analytical workflows (figure 1).
 
 
 In order to initiate these notebooks on the RAP please see instructions at the bottom of this page.
@@ -33,6 +33,8 @@ G101 UKB pipeline pVCF to PLINK (language = Bash; instance = Single Node)
 G102 Processing variant data using PLINK (Bash; Single Node)
 
 G103 Retrieve participant data for Hail GWAS (Bash; Spark)
+
+G104: Getting started using the UK Biobank pVCF data (Bash; Single Node)
 
 
 **Genomics analytical workflows**
@@ -130,6 +132,22 @@ Scope: In this notebook, we access phenotypic data stored in the Spark database.
 -   estimated cost: £0.10
 
 ##
+
+## G104: Getting started using the UK Biobank pVCF data (Bash; Single Node)
+
+**Scope:** This notebook shows several ways of working with population VCFs (pVCFs), including handling variants with very long identifiers and multiallelic sites, using the [Swiss Army Knife](https://ukbiobank.dnanexus.com/app/swiss-army-knife) tool. Throughout this notebook the BEAGLE data (Field 30108) is used as an example data set. These data are described on Showcase in [Field 30108](https://biobank.ndph.ox.ac.uk/showcase/field.cgi?id=30108) and in the [500k BEAGLE Phased VCFs data release](https://community.ukbiobank.ac.uk/hc/en-gb/articles/31907475048733-500k-BEAGLE-Phased-VCFs-data-release) article. 
+
+**Notebook file:** G104_Getting_started_using_the_UK_Biobank_pVCF_data.ipynb
+
+**Run info:**
+
+-   runtime: ~1d 5h 
+
+-   recommended instance: mem2_ssd1_v2_x8 (note the non-interactive jobs launched from notebook have variable instances)
+
+-   estimated cost: ~£4-5
+
+## 
 
 # Analytical notebook details
 
